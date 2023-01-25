@@ -1,7 +1,7 @@
 ﻿// Задача 13: Напишите программу, которая выводит 
 //третью цифру заданного числа или сообщает, что третьей цифры нет.
 //System.Random numSintezator = new System.Random();
-char[] digits = Console.ReadLine().ToCharArray();
+char[] digits = (Console.ReadLine()??"0").ToCharArray();
   
  if (digits.Length >= 3)
    {
