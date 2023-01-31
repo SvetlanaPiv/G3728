@@ -1,6 +1,4 @@
-﻿// Задача №30
-// Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в
-// случайном порядке.
+﻿// №29 Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
 //Метод читает данные от пользователя
 int ReadData(string msg)
@@ -19,7 +17,7 @@ int[] Gen1DArr(int num, int begin, int end)
     }
     return arr;
 }
-
+// метод заполняет массив
 void Print1DArr(int[] arr)
 {
     Console.Write("[");
@@ -29,10 +27,10 @@ void Print1DArr(int[] arr)
     }
     Console.WriteLine(arr[arr.Length-1]+"]");
 }
-
+//выводит на экран ответ
 int arrLen = ReadData("Введите длину массива.");
 
-int[] arr = Gen1DArr(arrLen, 0, 2);
+int[] arr = Gen1DArr(arrLen, 0, 8);
 
 Print1DArr(arr);
 
